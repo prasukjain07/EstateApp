@@ -43,10 +43,10 @@ return(
                 />
             </div>
             <div className={open ? "menu active" : "menu"}>
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact Us</a>
-                <a href="/">Agents</a>
+                <Link href="/">Home</Link>
+                <Link href="/">About</Link>
+                <Link href="/contact">Contact Us</Link>
+                <Link href="/list">Agents</Link>
                 <a href="/">Sign in</a>
                 <a href="/">Sign Up</a> 
             </div>

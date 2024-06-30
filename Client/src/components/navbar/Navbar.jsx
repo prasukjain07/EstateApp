@@ -15,8 +15,8 @@ return(
             </Link>
             <Link to="/">Home</Link>
             <Link to="/">About</Link>
-            <Link to="/">Contact Us</Link>
-            <Link to="/">Agents</Link>
+            <Link to="/contact">Contact Us</Link>
+            <Link to="/list">Agents</Link>
         </div>
         <div className="right">
             {user ? (

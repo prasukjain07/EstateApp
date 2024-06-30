@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/Navbar"
 import HomePage from "./routes/homePage/HomePage"
 import ListPage from "./routes/listPage/ListPage"
+import Contact from "./routes/ContactUs/Contact"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,7 +17,11 @@ function App() {
         <Layout/>,
         children:[
           {
-            path:"/ list",
+            path:"/",
+            element: <HomePage/>
+          },
+          {
+            path:"/list",
             element:<ListPage/>
           },
           {
@@ -26,6 +31,10 @@ function App() {
           {
             path:"/profile",
             element: <ProfilePage/>
+          },
+          {
+            path:"/contact",
+            element: <Contact/>
           }
 
         ]

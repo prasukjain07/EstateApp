@@ -6,19 +6,19 @@ nav{
     height: 100px;
     align-items: center;
 
-    a{
-        transition: all 0.5s ease;
-
-        @include sm{
-            display: none;
-        }
-
-        &:hover{
-            scale: 1.05;
-        }
-    }
-
+    
     .left{
+        a{
+            transition: all 0.5s ease;
+    
+            @include sm{
+                display: none;
+            }
+    
+            &:hover{
+                scale: 1.05;
+            }
+        }
         flex: 3;
         display:flex;
         align-items: center;
@@ -46,6 +46,17 @@ nav{
         }
     }
     .right{
+        a{
+            transition: all 0.5s ease;
+    
+            @include sm{
+                display: none;
+            }
+    
+            &:hover{
+                scale: 1.05;
+            }
+        }
         flex: 2;
         display: flex;
         align-items: center;
@@ -54,16 +65,19 @@ nav{
         background-color: #fcf5f3;
         height: 100% ;
 
+        .avatar{
+            @include sm{
+                display:flex;
+            }
+        }
         .user{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            
             img{
                 width: 48px;
                 height: 48px;
                 border-radius: 50%;
-                margin-right: 20px;
                 object-fit: cover;
             }
             span{

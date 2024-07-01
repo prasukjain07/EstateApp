@@ -1,4 +1,4 @@
-
+@import "../../responsive.scss";
 .filter{
     display: flex;
     flex-direction: column;
@@ -18,21 +18,30 @@
             border: 1px solid #e0e0e0;
             border-radius: 5px;
             font-size: 14px;
+            
+        @include sm{
+            width: 100%;
+        }
         }
         label{
             font-size: 10px;
         }
     }
-.top{
-    input{
-        width:100%
+    .top{
+        input{
+            width:100%
+        }
     }
-}
 
     .bottom{
         display:flex;
         width: 100%;
         justify-content: space-between;
+        gap: 10px;
+        
+        @include sm{
+            flex-direction: column;
+        }
 
         button{
             background-color:#fece51;

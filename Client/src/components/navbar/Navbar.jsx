@@ -21,16 +21,16 @@ return(
         <div className="right">
             {user ? (
                 <div className="user">
-                    <img src={userData.img}/>
+                    <Link to="/profile" className="avatar"><img src={userData.img}/></Link>
                     <span>{userData.name}</span>
                     <Link to="/profile" className="register">Profile</Link>
                 </div>
             ) : (
                 <>
-                    <a href="/">Sign in</a>
-                    <a className="register" href="/">
+                    <Link to="/">Sign in</Link>
+                    <Link to="/" className="register" >
                         Sign Up
-                    </a>
+                    </Link>
                 </>
             )}
 
@@ -43,10 +43,10 @@ return(
                 />
             </div>
             <div className={open ? "menu active" : "menu"}>
-                <Link href="/">Home</Link>
-                <Link href="/">About</Link>
-                <Link href="/contact">Contact Us</Link>
-                <Link href="/list">Agents</Link>
+                <Link to="/">Home</Link>
+                <Link to="/">About</Link>
+                <Link to="/contact">Contact Us</Link>
+                <Link to="/list">Agents</Link>
                 <a href="/">Sign in</a>
                 <a href="/">Sign Up</a> 
             </div>
